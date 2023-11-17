@@ -1,6 +1,8 @@
-import { useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
+import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
 import "./Start.css";
+import Loading from "./Loading";
 
 const MainContent = () => {
     return (
@@ -11,28 +13,41 @@ const MainContent = () => {
     );
 };
   
-// Create a component for the button with the click redirection
-const Button = () => {
-    const pageRedirect = () => {
-        window.location = "loading.html";
-    };
-  
+const Button = ( {onClick} ) => {
     return (
         <div className = "sub_content">
-            <a href = "loading.html" className = "button" onClick = {pageRedirect}>
-                Press Any Key to Start
-            </a>
+            <div className = "button" onClick = {onClick}>
+                Click to Continue!
+            </div>
+        </div>
+    );
+};
+
+const Temp = () => {
+    return (
+        <div className = "main_content">
+            <h1>BOB</h1>  
+            <h2>BUILDER</h2>
         </div>
     );
 };
   
-  // Create the main App component incorporating the above components
-  const Start = () => {
+const Start = () => {
+    const [IsClicked, setIsClicked] = useState(false);
+
+    const handleButtonClick = () => {
+        setIsClicked(true);
+    }
+
     return (
         <div className = "stars">
             <div className = "rotating_stars" />
-            <MainContent />
-            <Button />
+            {IsClicked ? <Loading /> : (
+                <>
+                    <MainContent />
+                    <Button onClick = {handleButtonClick} />
+                </>
+            )}
         </div>
     );
   };
