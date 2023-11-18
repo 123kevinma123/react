@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+
+import Menu from "./Menu";
 
 const Text = () => {
     return (
@@ -35,26 +37,46 @@ function move1() {
         }
     }
 }
+const Temp = () => {
+    return (
+        <div className = "loading_content">
+            <div className = "loading_bar">
+                <div id = "bar" />
+                <div id = "bar1" />
+            </div>
+            <Text />
+        </div>
+    );
+};
 
 const Loading = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
     useEffect(() => {
         const timeout = setTimeout(() => move(), 500);
         const timeout1 = setTimeout(() => move1(), 2600);
+        const timeout2 = setTimeout(() => {setShowMenu(true)}, 4000);
 
         return () => {
             clearTimeout(timeout);
             clearTimeout(timeout1);
+            clearTimeout(timeout2);
         };
     }, []);
 
     return (
-        <div className = "loading_content">
-        <div className = "loading_bar">
-            <div id = "bar" />
-            <div id = "bar1" />
-        </div>
-        <Text />
-        </div>
+        <>
+            {showMenu ? <Menu /> :(
+                <div className = "loading_content">
+                    <div className = "loading_bar">
+                        <div id = "bar" />
+                        <div id = "bar1" />
+                    </div>
+                    <Text />
+                </div>
+            )}
+        </>
+
     );
 };
 

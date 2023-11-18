@@ -3,15 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
 import "./Start.css";
 import Loading from "./Loading";
-
-const MainContent = () => {
-    return (
-        <div className = "main_content">
-            <h1>KEVIN</h1>  
-            <h2>MA</h2>
-        </div>
-    );
-};
+import Menu from "./Menu";
+import MainContent from "./MainContent";
   
 const Button = ( {onClick} ) => {
     return (
@@ -22,27 +15,17 @@ const Button = ( {onClick} ) => {
         </div>
     );
 };
-
-const Temp = () => {
-    return (
-        <div className = "main_content">
-            <h1>BOB</h1>  
-            <h2>BUILDER</h2>
-        </div>
-    );
-};
   
 const Start = () => {
-    const [IsClicked, setIsClicked] = useState(false);
-
+    const [isLoading, setIsLoading] = useState(false);
     const handleButtonClick = () => {
-        setIsClicked(true);
+        setIsLoading(true);
     }
 
     return (
         <div className = "stars">
             <div className = "rotating_stars" />
-            {IsClicked ? <Loading /> : (
+            {isLoading ? <Loading /> : (
                 <>
                     <MainContent />
                     <Button onClick = {handleButtonClick} />
