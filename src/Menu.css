@@ -4,68 +4,98 @@
     padding: 0;
     font-family: 'Press Start 2P', cursive;
 }
-.navbar_item {
-    height: 5vw; 
-    padding-top: 1vw;
-    /*border: 2px solid white;*/
+.menu_subcontent {
+    /*border: 2px solid green;*/
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
     position: relative;
-    flex: 1;
+    height: fit-content;
+}
+.navbar_item {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+    /*border: 2px solid white;*/
 }
 .menu_button {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    margin-top:  1%;
-    padding-bottom: 1%;
-    margin-right: auto;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2px;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     position: relative;
+    border: 2px solid white;
 }
 .menu_button:hover {
     animation: pulse 1.8s infinite;
-    font-size: 1.5vw;
 }
 .menu_button:hover::before {
-    position: sticky;
     content: ">";
-    font-size: 1.45vw;
-    margin-top: -0.3%;
+    font-size: 1.45rem;
+    margin-top: 2px;
     color: red;
     animation: fade-in-left 0.6s forwards;
+    /*border: 2px solid green;*/
 }
 .menu_button:hover::after {
-    position: sticky;
     content: "<";
-    font-size: 1.45vw;
-    margin-top: -0.3%;
+    font-size: 1.45rem;
+    margin-top: 2px;
     color: red;
     animation: fade-in-right 0.6s forwards;
 }
 @keyframes fade-in-left {
     0% {
-        margin-left: -1.5%;
-        margin-right: -1.5%;
+        margin-left: -10px;
+        margin-right: -10px;
         opacity: 0;
     }
     100% {
-        margin-left: -1%;
-        margin-right: -2%;
+        margin-left: -20px;
+        margin-right: -20px;
         opacity: 1;
     }
 }
 @keyframes fade-in-right {
     0% {
-        margin-left: -1.5%;
-        margin-right: -1.5%;
+        margin-left: -10px;
+        margin-right: -10px;
         opacity: 0;
     }
     100% {
-        margin-left: -2%;
-        margin-right: -1%;
+        margin-left: -20px;
+        margin-right: -20px;
+        opacity: 1;
+    }
+}
+@keyframes pulse {
+	60% {
+        opacity: 0.8;
+		font-size: 1.45rem;
+	}
+    100% {
         opacity: 1;
     }
 }
 h5 {
     color: white;
+}
+.menu_content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 150px;
+    color: white;
+    padding-bottom: 50px;
+    /*border: 2px solid white;*/
+}
+@media screen and (max-width: 800px) {
+    .menu_button {
+        font-size: 1rem;
+    }
 }

@@ -2,9 +2,10 @@ import React, { useEffect, useState} from "react";
 import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 
 import "./Start.css";
-import Loading from "./Loading";
-import Menu from "./Menu";
-import MainContent from "./MainContent";
+import Loading from "./Loading.js";
+import Menu from "./Menu.js";
+import MainContent from "./MainContent.js";
+import Footer from "./Footer.js"
   
 const Button = ( {onClick} ) => {
     return (
@@ -29,6 +30,7 @@ const Start = () => {
                 <>
                     <MainContent />
                     <Button onClick = {handleButtonClick} />
+                    <Footer />
                 </>
             )}
         </div>

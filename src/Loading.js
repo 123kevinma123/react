@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import Menu from "./Menu";
+import Menu from "./Menu.js";
+import Footer from "./Footer.js";
 
 const Text = () => {
     return (
@@ -73,6 +74,7 @@ const Loading = () => {
                         <div id = "bar1" />
                     </div>
                     <Text />
+                    <Footer />
                 </div>
             )}
         </>
