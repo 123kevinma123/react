@@ -114,7 +114,7 @@ h4 {
     position: relative;
 }
 .loading_content {
-    background: black;
+    content: "";
 }
 @media screen and (max-width: 800px) {
     h1 {

@@ -1,28 +1,45 @@
-import React, { useEffect} from "react";
+import React, { useEffect, useState} from "react";
 
 import "./Start.css";
-//import "./Menu.css";
+import "./Menu.css";
 import MainContent from "./MainContent.js";
 import Footer from "./Footer.js";
 
+const About = () => <h5>This is the About section.</h5>;
+const Resume = () => <h5>This is the Resume section.</h5>;
+const TitleScreen = () => <h5>This is the Title Screen section.</h5>;
+
 const SubContent = () => {
-    const buttonStyle = { listStyle: 'none' };
+  const [selectedSection, setSelectedSection] = useState("");
 
-    return (
-        <p>
-        <li className = "navbar_item" style = {buttonStyle}>
-            <a href = "about.html" className = "button1">&nbsp;ABOUT&nbsp;</a>
+  const buttonStyle = { listStyle: 'none' };
+
+  const handleSectionChange = (section) => {
+    setSelectedSection(section);
+  };
+
+  return (
+    <div>
+      <ul>
+        <li className="navbar_item" style={buttonStyle} onClick={() => handleSectionChange("about")}>
+          <span className="menu_button">&nbsp;ABOUT&nbsp;</span>
         </li>
-        <li className = "navbar_item" style = {buttonStyle}>
-            <a href="resume.html" className = "button1">&nbsp;RESUME&nbsp;</a>
+        <li className="navbar_item" style={buttonStyle} onClick={() => handleSectionChange("resume")}>
+          <span className="menu_button">&nbsp;RESUME&nbsp;</span>
         </li>
-        <li className = "navbar_item" style = {buttonStyle}>
-            <a href = "index.html" className = "button1">&nbsp;TITLE SCREEN&nbsp;</a>
+        <li className="navbar_item" style={buttonStyle} onClick={() => handleSectionChange("titleScreen")}>
+          <span className="menu_button">&nbsp;TITLE SCREEN&nbsp;</span>
         </li>
-        </p>
-    );
+      </ul>
+
+      <div>
+        {selectedSection === 'about' && <About />}
+        {selectedSection === 'resume' && <Resume />}
+        {selectedSection === 'titleScreen' && <TitleScreen />}
+      </div>
+    </div>
+  );
 };
-
 const Menu = () => {
     return (
     <>
