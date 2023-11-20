@@ -29,7 +29,7 @@
     color: white;
     font-size: 1.5rem;
     position: relative;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
 }
 .menu_button:hover {
     animation: pulse 1.8s infinite;
@@ -37,39 +37,25 @@
 .menu_button:hover::before {
     content: ">";
     font-size: 1.45rem;
-    margin-top: 2px;
     color: red;
-    animation: fade-in-left 0.6s forwards;
+    animation: fade_in 0.6s forwards;
     /*border: 2px solid green;*/
 }
 .menu_button:hover::after {
     content: "<";
     font-size: 1.45rem;
-    margin-top: 2px;
     color: red;
-    animation: fade-in-right 0.6s forwards;
+    animation: fade_in 0.6s forwards;
 }
-@keyframes fade-in-left {
+@keyframes fade_in {
     0% {
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: -15px;
+        margin-right: -15px;
         opacity: 0;
     }
     100% {
-        margin-left: -20px;
-        margin-right: -20px;
-        opacity: 1;
-    }
-}
-@keyframes fade-in-right {
-    0% {
-        margin-left: -10px;
-        margin-right: -10px;
-        opacity: 0;
-    }
-    100% {
-        margin-left: -20px;
-        margin-right: -20px;
+        margin-left: -25px;
+        margin-right: -25px;
         opacity: 1;
     }
 }
@@ -96,6 +82,30 @@ h5 {
 }
 @media screen and (max-width: 800px) {
     .menu_button {
+        font-size: 1.05rem;
+    }
+    .menu_button:hover::before {
         font-size: 1rem;
+    }
+    .menu_button:hover::after {
+        font-size: 1rem;
+    }
+    @keyframes pulse {
+        60% {
+            font-size: 1rem;
+        }
+        100% {
+            
+        }
+    }
+    @keyframes fade_in {
+        0% {
+            margin-left: -14px;
+            margin-right: -14px;
+        }
+        100% {
+            margin-left: -16px;
+            margin-right: -16px;
+        }
     }
 }

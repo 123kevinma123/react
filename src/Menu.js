@@ -26,8 +26,6 @@ const MenuContent = () => {
 const SubContent = () => {
   const [selectedSection, setSelectedSection] = useState("");
 
-  const buttonStyle = { listStyle: 'none' };
-
   const handleSectionChange = (section) => {
     setSelectedSection(section);
   };
@@ -35,13 +33,13 @@ const SubContent = () => {
   return (
     <div>
       <ul>
-        <li className = "navbar_item" style={buttonStyle} onClick={() => handleSectionChange("about")}>
-          <span className="menu_button">&nbsp;ABOUT&nbsp;</span>
+        <li className = "navbar_item" onClick={() => handleSectionChange("about")}>
+          <span className = "menu_button">&nbsp;ABOUT&nbsp;</span>
         </li>
-        <li className = "navbar_item" style={buttonStyle} onClick={() => handleSectionChange("resume")}>
+        <li className = "navbar_item" onClick={() => handleSectionChange("resume")}>
           <span className = "menu_button">&nbsp;RESUME&nbsp;</span>
         </li>
-        <li className = "navbar_item" style={buttonStyle} onClick={() => handleSectionChange("titleScreen")}>
+        <li className = "navbar_item" onClick={() => handleSectionChange("titleScreen")}>
           <span className = "menu_button">&nbsp;TITLE SCREEN&nbsp;</span>
         </li>
       </ul>
