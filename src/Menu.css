@@ -71,6 +71,13 @@
 h5 {
     color: white;
 }
+h3 {
+    color:white;
+    text-align: center;
+    font-size: 4vw;
+    margin-top: -20%;
+    margin-bottom: -20%;
+}
 .menu_content {
     display: flex;
     text-align: center;
@@ -79,6 +86,16 @@ h5 {
     color: white;
     padding-bottom: 50px;
     /*border: 2px solid white;*/
+}
+.resume_content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: -2%;
+    /*border: 2px solid white;*/
+    margin-inline: 25%;
+    position: relative;
 }
 @media screen and (max-width: 800px) {
     .menu_button {

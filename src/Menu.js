@@ -5,9 +5,9 @@ import "./Menu.css";
 import MainContent from "./MainContent.js";
 import Footer from "./Footer.js";
 import Start from "./Start.js";
+import Resume from "./Resume.js";
+import About from "./About.js";
 
-const About = () => <h5>This is the About section.</h5>;
-const Resume = () => <h5>This is the Resume section.</h5>;
 const TitleScreen = () => {
   return (
     <Start />
@@ -24,31 +24,31 @@ const MenuContent = () => {
 };
 
 const SubContent = () => {
-  const [selectedSection, setSelectedSection] = useState("");
+    const [selectedSection, setSelectedSection] = useState("");
 
-  const handleSectionChange = (section) => {
+    const handleSectionChange = (section) => {
     setSelectedSection(section);
   };
 
   return (
     <div>
-      <ul>
-        <li className = "navbar_item" onClick={() => handleSectionChange("about")}>
-          <span className = "menu_button">&nbsp;ABOUT&nbsp;</span>
-        </li>
-        <li className = "navbar_item" onClick={() => handleSectionChange("resume")}>
-          <span className = "menu_button">&nbsp;RESUME&nbsp;</span>
-        </li>
-        <li className = "navbar_item" onClick={() => handleSectionChange("titleScreen")}>
-          <span className = "menu_button">&nbsp;TITLE SCREEN&nbsp;</span>
-        </li>
-      </ul>
-      <Footer />
-      <div>
-        {selectedSection === 'about' && <About />}
-        {selectedSection === 'resume' && <Resume />}
-        {selectedSection === 'titleScreen' && <TitleScreen />}
-      </div>
+        <ul>
+            <li className = "navbar_item" onClick={() => handleSectionChange("about")}>
+                <span className = "menu_button">&nbsp;ABOUT&nbsp;</span>
+            </li>
+            <li className = "navbar_item" onClick={() => handleSectionChange("resume")}>
+                <span className = "menu_button">&nbsp;RESUME&nbsp;</span>
+            </li>
+            <li className = "navbar_item" onClick={() => handleSectionChange("titleScreen")}>
+                <span className = "menu_button">&nbsp;TITLE SCREEN&nbsp;</span>
+            </li>
+        </ul>
+        <Footer />
+        <div>
+            {selectedSection === 'about' && <About />}
+            {selectedSection === 'resume' && <Resume />}
+            {selectedSection === 'titleScreen' && <TitleScreen />}
+        </div>
     </div>
   );
 };
