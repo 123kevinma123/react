@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Menu from "./Menu.js";
 import Footer from "./Footer.js";
@@ -46,6 +47,19 @@ const Temp = () => {
                 <div id = "bar1" />
             </div>
             <Text />
+        </div>
+    );
+};
+
+const loading_content = () => {
+    return (
+        <div className = "loading_content">
+            <div className = "loading_bar">
+                <div id = "bar" />
+                <div id = "bar1" />
+            </div>
+            <Text />
+            <Footer />
         </div>
     );
 };
