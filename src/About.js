@@ -1,25 +1,18 @@
 import React, { useEffect, useState} from "react";
 import Menu from "./Menu.js";
 import "./About.css";
+import "./Menu.css"
 
-const AboutContent = () => {
-    return (
-        <div className = "about_content">
-                <h3>ABOUT</h3>
-        </div>
-    );
-};
 
-const SubContent = () => {
+const AboutSubContent = () => {
     return (
-        <div className = "sub_content1">
+        <div className = "aboutSubContent">
             <p className = "title">
                 INTRODUCTION
             </p>
             <p className = "about">
                 <br/>
-                &nbsp&nbsp&nbsp
-                Hey! I'm Kevin Ma, the creator of this website, currently a 
+                &nbsp;&nbsp;&nbsp;Hey! I'm Kevin Ma, the creator of this website, currently a 
                 Junior in Computer Science attending Purdue University. In my free
                 time, I hang out with friends, play the violin, and code side projects such as this website.
             </p>
@@ -29,7 +22,7 @@ const SubContent = () => {
             </p>
             <p className = "about">
                 <br/>
-                &nbsp&nbsp&nbspI love the retro-esque feeling of 8 bit games, particularly
+                &nbsp;&nbsp;&nbsp;I love the retro-esque feeling of 8 bit games, particularly
                 Space Invaders. I'm also a big fan of Star Wars. This led to the space themed 
                 website you see now.
                 <br/>
@@ -52,16 +45,14 @@ const About = () => {
     return (
         <>
             {isBack ? <Menu /> : (
-                <div className = "about_main">
-                    <AboutContent />
-                    <SubContent />
-                    <div className = "menu_content">
-                        <p> 
-                            <li className = "navbar_item" onClick = {() => setIsBack(true)}>
-                                <span className = "menu_button">&nbsp;BACK&nbsp;</span>
-                            </li>
-                        </p>
+                <div className = "aboutMain">
+                    <div className = "aboutContent">
+                        <h3>ABOUT</h3>
                     </div>
+                    <AboutSubContent />
+                    <li className = "navbar_item" onClick = {() => setIsBack(true)}>
+                        <span className = "menu_button">&nbsp;BACK&nbsp;</span>
+                    </li>
                 </div>
             )}
         </>

@@ -71,13 +71,7 @@
 h5 {
     color: white;
 }
-h3 {
-    color:white;
-    text-align: center;
-    font-size: 4vw;
-    margin-top: -20%;
-    margin-bottom: -20%;
-}
+
 .menu_content {
     display: flex;
     text-align: center;
