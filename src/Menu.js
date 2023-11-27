@@ -7,6 +7,7 @@ import Footer from "./Footer.js";
 import Start from "./Start.js";
 import Resume from "./Resume.js";
 import About from "./About.js";
+import Nasa from "./Nasa.js";
 
 const TitleScreen = () => {
   return (
@@ -36,6 +37,9 @@ const MenuContent = () => {
                         <li className = "navbar_item" onClick = {() => handleSectionChange("resume")}>
                             <span className = "menu_button">&nbsp;RESUME&nbsp;</span>
                         </li>
+                        <li className = "navbar_item" onClick = {() => handleSectionChange("nasa")}>
+                            <span className = "menu_button">&nbsp;NASA&nbsp;</span>
+                        </li>
                         <li className = "navbar_item" onClick = {() => handleSectionChange("titleScreen")}>
                             <span className = "menu_button">&nbsp;TITLE SCREEN&nbsp;</span>
                         </li>
@@ -46,6 +50,7 @@ const MenuContent = () => {
             {selectedSection === "about" && <About />}
             {selectedSection === "resume" && <Resume />}
             {selectedSection === "titleScreen" && <TitleScreen />}
+            {selectedSection === "nasa" && <Nasa />}
         </>
     );
 };
