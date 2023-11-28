@@ -4,7 +4,7 @@ import "./Start.css";
 
 const Footer = () => {
     return (
-        <div class = "footer">
+        <div className = "footer">
             © 2023 KEVIN MA
         </div>
     );

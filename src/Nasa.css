@@ -35,3 +35,7 @@
     cursor: pointer;
     padding-right: 1%;
 }
+.temp {
+    font-size: 3rem;
+    color: white;
+}
