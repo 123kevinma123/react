@@ -3,6 +3,7 @@ import React, { useEffect, useState} from "react";
 import "./Menu.css";
 import "./Nasa.css";
 import Menu from "./Menu.js";
+import Footer from "./Footer.js";
 import SearchIcon from "./Search.svg";
 const API_URL = "https://api.nasa.gov/planetary/apod?api_key=ul34ocWDAsmvuT3LajI9fqX4drjb1Yu3TBtol5xR";
 
@@ -29,17 +30,21 @@ const Nasa = () => {
                     </div>
 
                     <div className = "search">
-                        <input
-                        value = {searchTerm}
-                        onChange = {(e) => {setSearchTerm(e.target.value)}}
-                        />
-                        <img
-                        src = {SearchIcon}
-                        onClick = {() => searchAPOD(searchTerm)}
-                        />
+                        <input value = {searchTerm} onChange = {(e) => {setSearchTerm(e.target.value)}}/>
+                        <img src = {SearchIcon} onClick = {() => searchAPOD(searchTerm)}/>
                     </div>
-                    <div className = "temp">
-                        <img src = {apod.url} alt = "temp" />
+                    <div className = "results">
+                        {apod.url ? (
+                            <div className = "apodContent">
+                                <div className = "apodTitle">{apod.title}</div>
+                                <img src = {apod.url} alt = "" style = {{ maxWidth: "90%", height: "auto" }}/>
+                                <div className = "apodExplanation">{apod.explanation}</div>
+                            </div>
+                        ) : (
+                            <></>
+                        )
+                        }
+
                     </div>
                     <li className = "navbar_item" onClick = {() => setIsBack(true)}>
                         <span className = "menu_button">&nbsp;BACK&nbsp;</span>

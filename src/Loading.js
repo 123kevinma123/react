@@ -51,19 +51,6 @@ const Temp = () => {
     );
 };
 
-const loading_content = () => {
-    return (
-        <div className = "loading_content">
-            <div className = "loading_bar">
-                <div id = "bar" />
-                <div id = "bar1" />
-            </div>
-            <Text />
-            <Footer />
-        </div>
-    );
-};
-
 const Loading = () => {
     const [showMenu, setShowMenu] = useState(false);
 
@@ -88,7 +75,6 @@ const Loading = () => {
                         <div id = "bar1" />
                     </div>
                     <Text />
-                    <Footer />
                 </div>
             )}
         </>

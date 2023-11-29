@@ -1,6 +1,8 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
 .nasaMain {
     position: relative;
-    content: "";
 }
 .nasaContent {
     text-align: center;
@@ -13,29 +15,45 @@
 }
 .search {
     display: flex;
-
     background: transparent;
     border: 2px solid white;
     margin-inline: 20%;
+    /*border: 2px solid red;*/
 }
 .search input {
-    flex: 1;
     border: none;
     font-size: 1.5rem;
-    padding-right: 1rem;
-    padding-left: 1%;
     outline: none;
     color: white;
     background: transparent;
+    width: 100%;
 }
-
 .search img {
     width: 30px;
     height: 30px;
     cursor: pointer;
-    padding-right: 1%;
+    /*border:2px solid red;*/
+    background: transparent;
 }
-.temp {
-    font-size: 3rem;
+.results {
+    display: flex;
     color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*border: 2px solid red;*/
+}
+.apodContent {
+    text-align: center;
+}
+.apodTitle {
+    font-size: 2rem;
+    padding: 20px 0;
+    /*border: 2px solid red;*/
+}
+.apodExplanation {
+    padding: 20px 0;
+    font-size: 1rem;
+    /*  border: 2px solid red;*/
+    margin-inline: 15%;
 }

@@ -30,7 +30,6 @@ const Start = () => {
                 <>
                     <MainContent />
                     <Button onClick = {handleButtonClick} />
-                    <Footer />
                 </>
             )}
         </div>

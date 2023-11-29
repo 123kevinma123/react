@@ -29,6 +29,7 @@
     color: white;
     font-size: 1.5rem;
     position: relative;
+    cursor: pointer;
     /*border: 2px solid white;*/
 }
 .menu_button:hover {
@@ -36,6 +37,7 @@
 }
 .menu_button:hover::before {
     content: ">";
+    font-weight: 1000;
     font-size: 1.45rem;
     color: red;
     animation: fade_in 0.6s forwards;
@@ -43,19 +45,20 @@
 }
 .menu_button:hover::after {
     content: "<";
+    font-weight: 1000;
     font-size: 1.45rem;
     color: red;
     animation: fade_in 0.6s forwards;
 }
 @keyframes fade_in {
     0% {
-        margin-left: -15px;
-        margin-right: -15px;
+        margin-left: auto;
+        margin-right: auto;
         opacity: 0;
     }
     100% {
-        margin-left: -25px;
-        margin-right: -25px;
+        margin-left: auto;
+        margin-right: auto;
         opacity: 1;
     }
 }
@@ -111,12 +114,12 @@ h5 {
     }
     @keyframes fade_in {
         0% {
-            margin-left: -14px;
-            margin-right: -14px;
+            margin-left: auto;
+            margin-right: auto;
         }
         100% {
-            margin-left: -16px;
-            margin-right: -16px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
