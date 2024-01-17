@@ -47,7 +47,7 @@ const About = () => {
             {isBack ? <Menu /> : (
                 <div className = "aboutMain">
                     <div className = "aboutContent">
-                        <h3>ABOUT</h3>
+                        <h3>ABOUT </h3>
                     </div>
                     <AboutSubContent />
                     <li className = "navbar_item" onClick = {() => setIsBack(true)}>
