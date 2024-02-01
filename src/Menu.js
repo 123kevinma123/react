@@ -27,7 +27,8 @@ const MenuContent = () => {
             {selectedSection === "" && (
                 <>
                     <div className = "menu_content">
-                        <h1>KEVIN MA</h1>  
+                        <h1>KEVIN</h1>
+                        <h2>MA</h2>  
                     </div>
                     <ul>
                         <li className = "navbar_item" onClick = {() => handleSectionChange("about")}>

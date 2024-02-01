@@ -1,6 +1,3 @@
-* {
-    font-family: 'Times New Roman', Times, serif;
-}
 .nasaMain {
     position: relative;
 }
@@ -19,6 +16,7 @@
     border: 2px solid white;
     margin-inline: 20%;
     /*border: 2px solid red;*/
+    font-family: 'Times New Roman', Times, serif;
 }
 .search input {
     border: none;
@@ -42,6 +40,7 @@
     justify-content: center;
     flex-direction: column;
     /*border: 2px solid red;*/
+    font-family: 'Times New Roman', Times, serif;
 }
 .apodContent {
     text-align: center;
@@ -54,6 +53,6 @@
 .apodExplanation {
     padding: 20px 0;
     font-size: 1rem;
-    /*  border: 2px solid red;*/
-    margin-inline: 15%;
+    /*border: 2px solid red;*/
+    margin-inline: 10%;
 }

@@ -11,7 +11,7 @@ const Button = ( {onClick} ) => {
     return (
         <div className = "sub_content">
             <div className = "button" onClick = {onClick}>
-                Click to Continue!
+                Click here!
             </div>
         </div>
     );
