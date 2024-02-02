@@ -1,23 +1,32 @@
-import React from "react";
-import "./Menu.css"
+import React, { useEffect, useState} from "react";
+import "./Menu.css";
+import "./Resume.css";
+import Menu from "./Menu";
+import resumeImage from './image.png';
 
 const Resume = () => {
+    const [isBack, setIsBack] = useState(false);
     return (
-    <div>
-      <div class = "resume_content">
-          <img src = "resume cropped.png" alt = "Resume Image" class = "center"/>
-      </div>
-      <div class = "sub_content">
-          <p>    
-              <li class = "navbar_item" style = "list-style: none;">
-                  <a href = "Resume Fall 2023" download = "Kevin_Ma_Resume" class = "button">&nbspDOWNLOAD&nbsp</a>
-              </li>
-              <li class = "navbar_item" style = "list-style: none;">
-                  <a href = "menu.html" class = "button">&nbspBACK&nbsp</a>
-              </li>
-          </p>
-      </div>
-      </div>
+        <>
+        {isBack ? <Menu /> : (
+            <div>
+                <div className = "resumeContent">
+                    <h3>Resume</h3>
+                </div>
+                <div className = "resumeSubcontent">
+                    <img src = {resumeImage} alt = "Resume Image" class = "resumeImage"/>
+                </div>
+                <div className = "sub_content">  
+                    <li className = "navbar_item">
+                    <a href="path/to/Resume2024.pdf" download="Resume2024.pdf" className="menu_button">&nbsp;DOWNLOAD&nbsp;</a>
+                    </li>
+                    <li className = "navbar_item" onClick = {() => setIsBack(true)}>
+                        <span className = "menu_button">&nbsp;BACK&nbsp;</span>
+                    </li>
+                </div>
+            </div>
+        )}
+    </>
     )
   }
   export default Resume;

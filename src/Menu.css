@@ -80,16 +80,6 @@ h5 {
     padding-bottom: 50px;
     /*border: 2px solid white;*/
 }
-.resume_content {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    margin-bottom: -2%;
-    /*border: 2px solid white;*/
-    margin-inline: 25%;
-    position: relative;
-}
 @media screen and (max-width: 800px) {
     .menu_button {
         font-size: 1.05rem;
