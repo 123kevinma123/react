@@ -8,6 +8,7 @@ import Start from "./Start.js";
 import Resume from "./Resume.js";
 import About from "./About.js";
 import Nasa from "./Nasa.js";
+import Projects from "./Projects.js";
 
 const TitleScreen = () => {
   return (
@@ -34,6 +35,9 @@ const MenuContent = () => {
                         <li className = "navbar_item" onClick = {() => handleSectionChange("about")}>
                             <span className = "menu_button">&nbsp;ABOUT&nbsp;</span>
                         </li>
+                        <li className = "navbar_item" onClick = {() => handleSectionChange("projects")}>
+                            <span className = "menu_button">&nbsp;Projects&nbsp;</span>
+                        </li>
                         <li className = "navbar_item" onClick = {() => handleSectionChange("resume")}>
                             <span className = "menu_button">&nbsp;RESUME&nbsp;</span>
                         </li>
@@ -50,6 +54,7 @@ const MenuContent = () => {
             {selectedSection === "resume" && <Resume />}
             {selectedSection === "titleScreen" && <TitleScreen />}
             {selectedSection === "nasa" && <Nasa />}
+            {selectedSection === "projects" && <Projects />}
         </>
     );
 };
