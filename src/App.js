@@ -19,7 +19,7 @@ const movie1 = {
 const App = () => {
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
-
+    //hello world
 
     const searchMovies = async (title) => {
         const response  = await fetch(` ${API_URL}&s=${title} `);
