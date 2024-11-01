@@ -1,111 +1,110 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 .menu_subcontent {
-    /*border: 2px solid green;*/
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
-    position: relative;
-    height: fit-content;
+	/*border: 2px solid green;*/
+	padding-bottom: 1.5%;
+	padding-top: 1.5%;
+	position: relative;
+	height: fit-content;
 }
 .navbar_item {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    height: 3rem;
-    /*border: 2px solid white;*/
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	height: 3rem;
+	/*border: 2px solid #fcfcfc;*/
 }
 .menu_button {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    position: relative;
-    cursor: pointer;
-    /*border: 2px solid white;*/
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #fcfcfc;
+	font-size: 1.5rem;
+	position: relative;
+	cursor: pointer;
+	/*border: 2px solid #fcfcfc;*/
 }
 .menu_button:hover {
-    animation: pulse 1.8s infinite;
+	animation: pulse 1.8s infinite;
 }
 .menu_button:hover::before {
-    content: ">";
-    font-weight: 1000;
-    font-size: 1.45rem;
-    color: red;
-    animation: fade_in 0.6s forwards;
-    /*border: 2px solid green;*/
+	content: '>';
+	font-weight: 1000;
+	font-size: 1.45rem;
+	color: red;
+	animation: fade_in 0.6s forwards;
+	/*border: 2px solid green;*/
 }
 .menu_button:hover::after {
-    content: "<";
-    font-weight: 1000;
-    font-size: 1.45rem;
-    color: red;
-    animation: fade_in 0.6s forwards;
+	content: '<';
+	font-weight: 1000;
+	font-size: 1.45rem;
+	color: red;
+	animation: fade_in 0.6s forwards;
 }
 @keyframes fade_in {
-    0% {
-        margin-left: auto;
-        margin-right: auto;
-        opacity: 0;
-    }
-    100% {
-        margin-left: auto;
-        margin-right: auto;
-        opacity: 1;
-    }
+	0% {
+		margin-left: auto;
+		margin-right: auto;
+		opacity: 0;
+	}
+	100% {
+		margin-left: auto;
+		margin-right: auto;
+		opacity: 1;
+	}
 }
 @keyframes pulse {
 	60% {
-        opacity: 0.8;
+		opacity: 0.8;
 		font-size: 1.45rem;
 	}
-    100% {
-        opacity: 1;
-    }
+	100% {
+		opacity: 1;
+	}
 }
 h5 {
-    color: white;
+	color: #fcfcfc;
 }
 
 .menu_content {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-top: 200px;
-    color: white;
-    padding-bottom: 50px;
-    /*border: 2px solid white;*/
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-top: 200px;
+	color: #fcfcfc;
+	padding-bottom: 50px;
+	/*border: 2px solid #fcfcfc;*/
 }
 @media screen and (max-width: 800px) {
-    .menu_button {
-        font-size: 1.05rem;
-    }
-    .menu_button:hover::before {
-        font-size: 1rem;
-    }
-    .menu_button:hover::after {
-        font-size: 1rem;
-    }
-    @keyframes pulse {
-        60% {
-            font-size: 1rem;
-        }
-        100% {
-            
-        }
-    }
-    @keyframes fade_in {
-        0% {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        100% {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+	.menu_button {
+		font-size: 1.05rem;
+	}
+	.menu_button:hover::before {
+		font-size: 1rem;
+	}
+	.menu_button:hover::after {
+		font-size: 1rem;
+	}
+	@keyframes pulse {
+		60% {
+			font-size: 1rem;
+		}
+		100% {
+		}
+	}
+	@keyframes fade_in {
+		0% {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		100% {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }

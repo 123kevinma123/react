@@ -13,7 +13,7 @@ const Button = ({ onClick }) => {
 			<div
 				className='big_button'
 				onClick={onClick}>
-				Click here!
+				Click anywhere!
 			</div>
 		</div>
 	);
@@ -33,6 +33,7 @@ const Start = () => {
 			) : (
 				<>
 					<MainContent />
+
 					<Button onClick={handleButtonClick} />
 				</>
 			)}

@@ -1,58 +1,61 @@
 .nasaMain {
-    position: relative;
+	position: relative;
 }
 .nasaContent {
-    text-align: center;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: white;
-    /*border: 2px solid white;*/
-    margin-inline: 25%;
+	text-align: center;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #fcfcfc;
+	/*border: 2px solid #fcfcfc;*/
+	margin-inline: 25%;
 }
 .search {
-    display: flex;
-    background: transparent;
-    border: 2px solid white;
-    margin-inline: 20%;
-    /*border: 2px solid red;*/
-    font-family: 'Times New Roman', Times, serif;
+	display: flex;
+	background: transparent;
+	border: 2px solid #fcfcfc;
+	margin-inline: 20%;
+	/*border: 2px solid red;*/
+	font-family: 'Times New Roman', Times, serif;
 }
 .search input {
-    border: none;
-    font-size: 1.5rem;
-    outline: none;
-    color: white;
-    background: transparent;
-    width: 100%;
+	border: none;
+	font-size: 1.5rem;
+	outline: none;
+	color: #fcfcfc;
+	background: transparent;
+	width: 100%;
 }
 .search img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    /*border:2px solid red;*/
-    background: transparent;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	/*border:2px solid red;*/
+	background: transparent;
 }
 .results {
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /*border: 2px solid red;*/
-    font-family: 'Times New Roman', Times, serif;
+	display: flex;
+	color: #fcfcfc;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/*border: 2px solid red;*/
+	font-family: 'Times New Roman', Times, serif;
 }
 .apodContent {
-    text-align: center;
+	text-align: center;
 }
 .apodTitle {
-    font-size: 2rem;
-    padding: 20px 0;
-    /*border: 2px solid red;*/
+	font-size: 2rem;
+	padding: 20px 0;
+	/*border: 2px solid red;*/
 }
 .apodExplanation {
-    padding: 20px 0;
-    font-size: 1rem;
-    /*border: 2px solid red;*/
-    margin-inline: 10%;
+	padding: 20px 0;
+	font-size: 1rem;
+	/*border: 2px solid red;*/
+	margin-inline: 10%;
+}
+.h4temp {
+	font-size: 1.2rem;
 }

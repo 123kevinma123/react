@@ -29,12 +29,12 @@ h2 {
 	text-align: center;
 	justify-content: center;
 	padding-top: 250px;
-	color: white;
+	color: #fcfcfc;
 	padding-bottom: 50px;
-	/*border: 2px solid white;*/
+	/*border: 2px solid #fcfcfc;*/
 }
 .sub_content {
-	color: white;
+	color: #fcfcfc;
 	position: relative;
 }
 .button {
@@ -44,7 +44,7 @@ h2 {
 	border: none;
 	outline: none;
 	color: red;
-	/*border: 2px solid white;*/
+	/*border: 2px solid #fcfcfc;*/
 	font-size: 25px;
 	animation: glowing 2.3s infinite;
 	cursor: pointer;
@@ -65,8 +65,14 @@ h2 {
 		color: rgb(180, 0, 0);
 	}
 }
+@font-face {
+	font-family: 'future';
+	src: url('/src/Kenney Future.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 .stars {
-	font-family: 'Press Start 2P', cursive;
+	font-family: 'Press Start 2P';
 }
 .rotating_stars {
 	background: transparent url('splashing.png') repeat;
@@ -74,7 +80,7 @@ h2 {
 	background-size: 100%;
 	height: 100%;
 	width: 100%;
-	animation: twinkle 100s linear infinite;
+	animation: twinkle 60s linear infinite;
 	position: fixed;
 }
 @keyframes twinkle {
@@ -88,29 +94,29 @@ h2 {
 #bar {
 	width: 0%;
 	height: 30px;
-	background-color: white;
+	background-color: #fcfcfc;
 	text-align: center;
 	line-height: 30px;
-	color: white;
+	color: #fcfcfc;
 }
 #bar1 {
 	width: 0%;
 	height: 30px;
-	background-color: white;
+	background-color: #fcfcfc;
 	text-align: center;
 	line-height: 30px;
-	color: white;
+	color: #fcfcfc;
 }
 .loading_bar {
 	display: flex;
 	width: 50%;
 	margin-inline: auto;
 	margin-top: 300px;
-	border: 2px solid white;
+	border: 2px solid #fcfcfc;
 	position: relative;
 }
 h4 {
-	color: white;
+	color: #fcfcfc;
 	text-align: center;
 	padding-top: 30px;
 	font-size: 2rem;
@@ -120,13 +126,32 @@ h4 {
 	content: '';
 }
 .footer {
-	color: white;
+	color: #fcfcfc;
 	position: fixed;
 	text-align: center;
 	margin-top: 100px;
 	font-size: 18px;
 	bottom: 0;
 	left: 0;
+}
+.big_button {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	color: red;
+	/*border: 2px solid #fcfcfc;*/
+	font-size: 25px;
+	animation: glowing 2.3s infinite;
+	cursor: default;
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 450px;
 }
 @media screen and (max-width: 800px) {
 	h1 {
@@ -147,16 +172,7 @@ h4 {
 	.footer {
 		font-size: 12px;
 	}
-}
-.big_button {
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
-	border: none;
-	outline: none;
-	color: red;
-	border: 2px solid white;
-	font-size: 25px;
-	animation: glowing 2.3s infinite;
-	cursor: pointer;
+	.big_button {
+		padding-top: 50vh;
+	}
 }

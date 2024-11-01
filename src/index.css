@@ -1,59 +1,59 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Press Start 2P', cursive;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Press Start 2P', cursive;
 }
 body {
-    background-color: black;
+	background-color: black;
 }
 h1 {
-    font-size: 6vw;
-    padding-inline: 4%;
-    position: relative;
+	font-size: 6vw;
+	padding-inline: 4%;
+	position: relative;
 }
 h2 {
-    font-size: 6vw;
-    padding-right: 3%;
-    position: relative;
+	font-size: 6vw;
+	padding-right: 3%;
+	position: relative;
 }
 .main_content {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-top: 13%;
-    color: white;
-    padding-bottom: 4%;
-    /*border: 2px solid white;*/
-    margin-inline: 25%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-top: 13%;
+	color: #fcfcfc;
+	padding-bottom: 4%;
+	/*border: 2px solid #fcfcfc;*/
+	margin-inline: 25%;
 }
 .sub_content1 {
-    color: white;
-    padding-bottom: 1.5%;
-    margin-inline: 25%;
-    position: relative;
+	color: #fcfcfc;
+	padding-bottom: 1.5%;
+	margin-inline: 25%;
+	position: relative;
 }
 .button1 {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    padding-top: 3%;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: white;
-    /*border: 2px solid white;*/
-    font-size: 2vw;
-    animation: glowing 2.3s infinite;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	padding-top: 3%;
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #fcfcfc;
+	/*border: 2px solid #fcfcfc;*/
+	font-size: 2vw;
+	animation: glowing 2.3s infinite;
 }
 .navbar_item {
-    height: 40px;
-    padding-top: 3px;
+	height: 40px;
+	padding-top: 3px;
 }
 .button1:hover {
-    font-size: 2vw;
-    transition: 100ms ease-in;
-    cursor: default;
+	font-size: 2vw;
+	transition: 100ms ease-in;
+	cursor: default;
 }
 /*.button1:hover::before {
     color: red;
@@ -70,38 +70,42 @@ h2 {
     margin-top: -8px;
 }*/
 @keyframes glowing {
-    0% {
-      color: rgb(180,0, 0);
-    }
-    50% {
-      color: red;
-    }
-    100% {
-      color: rgb(180, 0, 0);
-    }
+	0% {
+		color: rgb(180, 0, 0);
+	}
+	50% {
+		color: red;
+	}
+	100% {
+		color: rgb(180, 0, 0);
+	}
 }
 .tom {
-    background: url("stars.png") repeat top center;
-    background-color: black;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
+	background: url('stars.png') repeat top center;
+	background-color: black;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
 }
 .malfoy {
-    background: transparent url("splashing.png") repeat top center;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
+	background: transparent url('splashing.png') repeat top center;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
 
-    animation: twinkle 100s linear infinite;
-    position: fixed;
+	animation: twinkle 100s linear infinite;
+	position: fixed;
 }
 .maine {
-    background: black;
+	background: black;
 }
 @keyframes twinkle {
-    from {background-position: 0,0;}
-    to {background-position: 1000px 0}
+	from {
+		background-position: 0, 0;
+	}
+	to {
+		background-position: 1000px 0;
+	}
 }
