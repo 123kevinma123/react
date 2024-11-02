@@ -44,20 +44,20 @@ const MenuContent = () => {
 								&nbsp;Projects&nbsp;
 							</span>
 						</li>
+						<li
+							className='navbar_item'
+							onClick={() => handleSectionChange('nasa')}>
+							<span className='menu_button'>
+								&nbsp;APOD&nbsp;
+							</span>
+						</li>
 						<li className='navbar_item'>
 							<a
 								href='path/to/Resume2024.pdf'
 								download='Resume2024.pdf'
 								className='menu_button'>
-								&nbsp;DOWNLOAD RESUME&nbsp;
+								&nbsp;RESUME&nbsp;
 							</a>
-						</li>
-						<li
-							className='navbar_item'
-							onClick={() => handleSectionChange('nasa')}>
-							<span className='menu_button'>
-								&nbsp;NASA APOD&nbsp;
-							</span>
 						</li>
 						<li
 							className='navbar_item'

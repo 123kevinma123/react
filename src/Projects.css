@@ -1,0 +1,13 @@
+.projects_link {
+	text-decoration: none;
+	/*width: fit-content;*/
+	/*margin-right: auto;*/
+	color: #fcfcfc;
+	transition: color 0.5s ease;
+}
+.projects_link:hover {
+	/*background-color: red;*/
+	/*border-radius: 10px;*/
+	text-decoration-line: underline;
+	text-decoration-thickness: 2px;
+}

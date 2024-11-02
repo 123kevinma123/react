@@ -67,12 +67,12 @@ h2 {
 }
 @font-face {
 	font-family: 'future';
-	src: url('/src/Kenney Future.ttf') format('truetype');
+	src: url('/src/HomeVideo-BLG6G.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 .stars {
-	font-family: 'Press Start 2P';
+	font-family: 'future';
 }
 .rotating_stars {
 	background: transparent url('splashing.png') repeat;

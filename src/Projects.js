@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Menu from './Menu.js';
 import './About.css';
 import './Menu.css';
+import './Projects.css';
+import avionicsWebsite from './AvionicsWebsite.png';
 
 const AboutSubContent = () => {
 	return (
@@ -9,48 +11,58 @@ const AboutSubContent = () => {
 			<p className='title'>AVIONICS WEBSITE</p>
 			<p className='about'>
 				<br />
-				&nbsp;&nbsp;&nbsp;Hey! I'm Kevin Ma, the creator of this
-				website, currently a Junior in Computer Science attending Purdue
-				University. In my free time, I hang out with friends, play the
-				violin, and code side projects such as this website.
+				<img
+					src={avionicsWebsite}
+					alt='Avionics Website Project'
+					className='image'
+				/>
+				<br />
+				<ul class='bullet-list'>
+					<li>
+						Built a Next.js website for Spaceport Avionics, boosting
+						visibility and attracting sponsorships.
+					</li>
+					<li>
+						Utilized Docker for containerization, with AWS ECR for
+						image storage and EKS for deployment orchestration.
+					</li>
+					<li>
+						<a
+							href='https://spaavionics.vercel.app/'
+							className='projects_link'>
+							Website Link
+						</a>
+					</li>
+				</ul>
 			</p>
 			<p className='title'>
 				<br />
-				THIS WEBSITE
+				POKEMON PRICE ESTIMATOR (Defunct)
 			</p>
 			<p className='about'>
 				<br />
-				&nbsp;&nbsp;&nbsp;I love the retro-esque feeling of 8 bit games,
-				particularly Space Invaders. I'm also a big fan of Star Wars.
-				This led to the space themed website you see now.
+				<img
+					src={avionicsWebsite}
+					alt='Avionics Website Project'
+					className='image'
+				/>
 				<br />
-				<br />
-			</p>
-			<p className='title'>SOCIALS</p>
-			<p className='about'>
-				<br />
-				<a
-					href='https://www.linkedin.com/in/kevinma2003/'
-					className='social'>
-					{' '}
-					LinkedIn{' '}
-				</a>
-				<a
-					href='https://github.com/123kevinma123'
-					className='social'>
-					{' '}
-					GitHub{' '}
-				</a>
-			</p>
-			<p className='title'>RESUME</p>
-			<p className='about'>
-				<br />
-				<a
-					href='path/to/Resume2024.pdf'
-					download='Resume2024.pdf'
-					className='social'>
-					Download
-				</a>
+				<ul class='bullet-list'>
+					<li>
+						Built a Puppeteer-based web scraper with Express.js
+						backend to extract, process, and integrate graded
+						Pokémon card data from multiple sources.
+					</li>
+					<li>
+						Created a frontend using React and Tailwind, enabling
+						card lookup and selection based on rarity and card
+						grades.
+					</li>
+					<li>
+						Integrated historical data graphs and price listings to
+						aid user decision-making on card valuations.
+					</li>
+				</ul>
 			</p>
 		</div>
 	);
