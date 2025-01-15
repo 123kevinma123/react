@@ -6,6 +6,7 @@
 }
 body {
 	background-color: black;
+	overflow-y: scroll;
 }
 h1 {
 	font-size: 6vw;

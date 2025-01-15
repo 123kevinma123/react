@@ -11,3 +11,60 @@
 	text-decoration-line: underline;
 	text-decoration-thickness: 2px;
 }
+
+.container {
+	max-width: 1500px;
+	margin: 20px auto;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	gap: 20px;
+}
+.project {
+	background: transparent;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid white;
+}
+
+.project img {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: auto;
+}
+.project-image {
+	height: 350px;
+	border-bottom: 2px solid white;
+	overflow: hidden;
+}
+
+.project-details {
+	height: 170px;
+	padding: 15px;
+	color: white;
+	line-height: 1.6;
+}
+.proj_title {
+	margin-bottom: 10px;
+}
+.project-title {
+	margin-top: 0px;
+	font-size: 1.25em;
+	margin-bottom: 10px;
+	color: white;
+	text-decoration: none;
+	color: red;
+}
+
+.project-title:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+}
+
+.project-description {
+	font-size: 0.9em;
+	color: #555;
+}

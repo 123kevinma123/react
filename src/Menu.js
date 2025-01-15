@@ -26,8 +26,7 @@ const MenuContent = () => {
 			{selectedSection === '' && (
 				<>
 					<div className='menu_content'>
-						<h1>KEVIN</h1>
-						<h2>MA</h2>
+						<h1>KEVIN MA</h1>
 					</div>
 					<ul>
 						<li
@@ -44,17 +43,18 @@ const MenuContent = () => {
 								&nbsp;Projects&nbsp;
 							</span>
 						</li>
-						<li
+						{/*<li
 							className='navbar_item'
 							onClick={() => handleSectionChange('nasa')}>
 							<span className='menu_button'>
 								&nbsp;APOD&nbsp;
 							</span>
-						</li>
+						</li> */}
 						<li className='navbar_item'>
 							<a
-								href='path/to/Resume2024.pdf'
-								download='Resume2024.pdf'
+								href='Resume2025.pdf'
+								target='_blank'
+								rel='noopener noreferrer'
 								className='menu_button'>
 								&nbsp;RESUME&nbsp;
 							</a>

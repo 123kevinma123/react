@@ -26,8 +26,7 @@ const AboutSubContent = () => {
 			<p className='about'>
 				<br />
 				&nbsp;&nbsp;&nbsp;I love the retro-esque feeling of 8 bit games,
-				particularly Space Invaders. I'm also a big fan of Star Wars.
-				This led to the space themed website you see now.
+				which heavily inspired the theme of this website.
 				<br />
 				<br />
 			</p>
